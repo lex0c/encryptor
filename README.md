@@ -12,7 +12,7 @@ but works perfectly independent of the framework.
 
 Click on any link to go a method-specific documentation.
 
-- [Hash Generator]()
+- [Hash Generator](https://github.com/lleocastro/encryptor/blob/master/Docs/HashGenerator.md)
 
 - [SMCrypter]()
 
@@ -99,7 +99,7 @@ $decrypt = $disguise->illumin($encrypt);
 
 > This readme is just a preview, for more information access the readme of each method.. 
 
-- [Hash Generator]() 
+- [Hash Generator](https://github.com/lleocastro/encryptor/blob/master/Docs/HashGenerator.md) 
 - [SMCrypter]() 
 - [Disguise]()
 
