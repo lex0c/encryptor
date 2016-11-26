@@ -20,7 +20,7 @@ Click on any link to go a method-specific documentation.
 
 ###Hash Generator
 
-> 107-bit hash for passwords encryption and things that do 
+> 107 bits hash for passwords encryption and things that do 
 not need to have their values retrieved later, only their hash for comparison
 
 ```php
@@ -75,5 +75,35 @@ $decoded = $smCrypt->decode($key, $encoded);
 //Output: "My EMAIL is 'leonardo_carvalho@outlook.com' and (10+5/2*7=0999) <><because yes. çÇ>";
 
 ```
+###Disguise
 
+> Encrypts and decrypts texts in base64 with some trick and manipulation for strings make a encryption obscure and simple
+
+```php
+//Construct the Disguise
+$disguise = new Disguise();
+
+//Data input
+$data = "This is a Rock ´N Roll..";
+
+//Data Encrypted
+$encrypt = $disguise->obscure($data);
+//Output: "Mll2SkZJaEJ5Y3BCeWNwaEdWPT1nTHV3R2J2SkZJT1Jyd2dz";
+
+//Decrypted
+$decrypt = $disguise->illumin($encrypt);
+//Output: "This is a Rock ´N Roll..";
+
+```
+####More info
+
+> This readme is just a preview, for more information access the readme of each method.. 
+
+- [Hash Generator]() 
+- [SMCrypter]() 
 - [Disguise]()
+
+<br>
+<br>
+
+###To contributions: < [Create issue](https://github.com/lleocastro/encryptor/issues) />
