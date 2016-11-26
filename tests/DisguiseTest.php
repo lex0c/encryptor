@@ -3,4 +3,12 @@
 require_once (__DIR__ . '/../encryption/src/Disguise.php');
 
 $disguise = new Disguise();
-var_dump($disguise->illumin($disguise->obscure('Testando hoje pq simmm')));
+
+$data = 'This is a Rock ´N Roll..';
+$en = $disguise->obscure($data);
+echo $en;
+
+echo "<br>";
+echo "<br>";
+
+echo $disguise->illumin($en);

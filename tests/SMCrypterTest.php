@@ -5,7 +5,7 @@ require_once (__DIR__ . '/../encryption/src/SMCrypter.php');
 $smCrypt1 = new SMCrypter();
 $smCrypt2 = new SMCrypter();
 
-$phase = "Meu EMAIL é 'leonardo_carvalho@outlook.com' and (10+5/2*7=0999) <><because yes. çÇ>";
+$phase = "My EMAIL is 'leonardo_carvalho@outlook.com' and (10+5/2*7=0999) <><because yes. çÇ>";
 $alphabet = 'A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z, Ç';
 $especials = '! @ # $ % ¨ & * ( ) _ + = , . ; / ? | \\ ° ° : ^ ~ ] } { [ ´ ` º ª';
 $accentuation = 'í ,ó, é,á, ú, õ, ẽ, ã, ẽ, ũ, ñ, â, ô';

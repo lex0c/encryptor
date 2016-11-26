@@ -3,7 +3,7 @@
 require_once (__DIR__ . '/../encryption/src/HashGenerator.php');
 
 
-$data = "Hello World! 1 abcdefghijklmnopq";
+$data = "Hello World!";
 $tag = "<?php phpinfo(); ?>"; //Safety against scripts injections.
 
 $hash1 = new HashGenerator();
@@ -38,7 +38,7 @@ echo "<br>";
 // //var_dump($encryptedData2);
 // //echo "<br>";
 
-$output = $hash3->isEquals("Hello World! 1 abcdefghijklmnopq", $encryptedData2);
+$output = $hash3->isEquals("Hello World!", $encryptedData2);
 var_dump($output);
 // //echo "<br>";
 
