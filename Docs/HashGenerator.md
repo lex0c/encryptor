@@ -11,12 +11,12 @@ $encryption = new HashGenerator();
 
 //Generate hash
 $hash = $encryption->encode("Hello World!");
-//Output "UYFSOVDTqZVNjxmUHNVbrVzUVFDeSV0d1N1aGN1THhTdWRkUyElakRnSEpEaKRUQ0oURxUFVYhmTSVEb1QFWwJXZVVjNWRlUO10aWNzVVlDW";
+//Output: "UYFSOVDTqZVNjxmUHNVbrVzUVFDeSV0d1N1aGN1THhTdWRkUyElakRnSEpEaKRUQ0oURxUFVYhmTSVEb1QFWwJXZVVjNWRlUO10aWNzVVlDW";
 
 //or, use variables.
 $data = "Hello World!";
 $hash = $encryption->encode($data);
-//Output "UYFSOVDTqZVNjxmUHNVbrVzUVFDeSV0d1N1aGN1THhTdWRkUyElakRnSEpEaKRUQ0oURxUFVYhmTSVEb1QFWwJXZVVjNWRlUO10aWNzVVlDW";
+//Output: "UYFSOVDTqZVNjxmUHNVbrVzUVFDeSV0d1N1aGN1THhTdWRkUyElakRnSEpEaKRUQ0oURxUFVYhmTSVEb1QFWwJXZVVjNWRlUO10aWNzVVlDW";
 
 
 ```
