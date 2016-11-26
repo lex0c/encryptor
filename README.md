@@ -103,10 +103,15 @@ $decrypt = $disguise->illumin($encrypt);
 - [SMCrypter]() 
 - [Disguise]()
 
-> Download: 
-
-- 1.1.4. [Release-stable](https://github.com/lleocastro/encryptor/releases/tag/1.1.4)
-
 <br>
 
-###To contributions: < [Create issue](https://github.com/lleocastro/encryptor/issues) />
+###Download
+
+> Realises stable
+
+- [1.1.4](https://github.com/lleocastro/encryptor/releases/tag/1.1.4)
+
+
+###To contributions 
+- [Create issue](https://github.com/lleocastro/encryptor/issues)
+- leonardo_carvalho@outlook.com
