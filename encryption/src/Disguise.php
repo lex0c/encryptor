@@ -7,7 +7,7 @@
  * @author Leonardo Carvalho <leonardo_carvalho@outlook.com>
  * @package \Encryptor
  * @copyright 2016 
- * @version 1.0.0
+ * @version 1.0.1
  */
 class Disguise
 {
@@ -17,7 +17,7 @@ class Disguise
      * @param (int) $data for encryption
      * @return (string) encrypted $data
      */
-    public function obscure($data)
+    final public function obscure($data)
     {
         $encryptedData = base64_encode($data);
         return base64_encode(strrev(substr($encryptedData, (strlen($encryptedData)/2)-strlen($encryptedData)
@@ -30,7 +30,7 @@ class Disguise
      * @param (int) $data encrypted
      * @return (int) original $data
      */
-    public function illumin($encryptedData)
+    final public function illumin($encryptedData)
     {
     	$encryptedData = base64_decode($encryptedData);
         $encryptedData = strrev(
