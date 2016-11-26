@@ -104,6 +104,6 @@ $decrypt = $disguise->illumin($encrypt);
 - [Disguise]()
 
 <br>
-<br>
 
+###Download: < [Release-stable](https://github.com/lleocastro/encryptor/releases/tag/1.1.4) />
 ###To contributions: < [Create issue](https://github.com/lleocastro/encryptor/issues) />
