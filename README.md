@@ -9,7 +9,7 @@ Data Encryption
 but works perfectly independent of the framework.
 
 ##This suite contains three types of data encryption!
-Click some to go to the method-specific documentation.
+Click on any link to go a method-specific documentation.
 
 - [Hash Generator]():
 
