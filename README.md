@@ -9,9 +9,16 @@ Data Encryption
 but works perfectly independent of the framework.
 
 ##This suite contains three types of data encryption!
+
 Click on any link to go a method-specific documentation.
 
-- [Hash Generator]():
+- [Hash Generator]()
+
+- [SMCrypter]()
+
+- [Disguise]()
+
+###Hash Generator
 
 > 107-bit hash for passwords encryption and things that do 
 not need to have their values retrieved later, only their hash for comparison
@@ -25,15 +32,48 @@ $data = "Hello World!";
 
 //Data Encrypted
 $encryptedData = $hash->encode($data);
-//Output
-string(107) "kFMZV3TGpVTWpnVIZFMs9GTqZldOtGZzZlbGt2VsRWWX1WNO5kbohlSEpEaKRUQ0oUR1UkVUJlTSd0c6RlbwpUTVVTVaNDcQZVMrhHVpVzT"
+//Output: "kFMZV3TGpVTWpnVIZFMs9GTqZldOtGZzZlbGt2VsRWWX1WNO5kbohlSEpEaKRUQ0oUR1UkVUJlTSd0c6RlbwpUTVVTVaNDcQZVMrhHVpVzT";
 
 //Hashs comparables
 $check = $hash->isEquals("Hello World!", $encryptedData);
-//Output
-bool(true)
+//Output: true;
 
 ```
 
-- [SMCrypter]()
+###Simple Message Encrypter
+
+> Encrypt messages with a symmetric key using a simple crazy calculation and a bit of obscurity. Tested only with small messages..
+
+```php
+//Construct the SMCrypter
+$smCrypt = new SMCrypter();
+
+//Data input
+$originalValue = "My EMAIL is 'leonardo_carvalho@outlook.com' and (10+5/2*7=0999) <><because yes. çÇ>";
+
+//Generate symmetric key
+$key = $smCrypt->keyGenerator();
+//Output: VE4zWXpOPT1RTjBr
+
+//Encrypted
+$encoded = $smCrypt->encode($key, $originalValue);
+/** 
+ * Output: 591047765 928789345 268658075 253306185 529640205 591047765 498936425 560343985 583371820 268658075 253306185
+ * 805974225 882733675 268658075 253306185 299361855 829002060 775270445 852029895 844353950 744566665 875057730 767594500
+ * 852029895 729214775 759918555 744566665 875057730 905761510 744566665 829002060 798298280 852029895 491260480 852029895
+ * 898085565 890409620 829002060 852029895 852029895 821326115 353093470 759918555 852029895 836678005 299361855 268658075
+ * 253306185 744566665 844353950 767594500 268658075 253306185 307037800 376121305 368445360 330065635 406825085 360769415
+ * 383797250 322389690 422176975 468232645 368445360 437528865 437528865 437528865 314713745 268658075 253306185 291685910
+ * 829002060 890409620 452880755 291685910 790622335 890409620 452880755 291685910 829002060 890409620 452880755 752242610
+ * 775270445 759918555 744566665 898085565 882733675 775270445 268658075 253306185 928789345 775270445 882733675 353093470
+ * 268658075 253306185 291685910 759918555 759918555 775270445 767594500 805974225 829002060 452880755 291685910 514288315
+ * 759918555 775270445 767594500 805974225 829002060 452880755 291685910 790622335 890409620 452880755
+ */
+
+//Decrypted
+$decoded = $smCrypt->decode($key, $encoded);
+//Output: "My EMAIL is 'leonardo_carvalho@outlook.com' and (10+5/2*7=0999) <><because yes. çÇ>";
+
+```
+
 - [Disguise]()
