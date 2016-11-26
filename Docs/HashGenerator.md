@@ -1,6 +1,6 @@
 ## PHP Hash Generator
 
-Generates an encrypted hash of 107 byte for max security of data
+> Generates an encrypted hash of 107 byte for max security of data
 
 ```php
 //Construct the Encrypter.
@@ -23,7 +23,7 @@ $hash = $encryption->generate($data);
 
 ## Comparable Hashs
 
-Compare if two hashes are equals returning a boolean value
+> Compare if two hashes are equals returning a boolean value
 
 ```php
 //Data comparable - is hash a "Hello World!"
