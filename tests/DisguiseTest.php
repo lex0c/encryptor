@@ -1,5 +1,6 @@
 <?php
 
-require_once (__DIR__ . '/../src/Disguise.php');
+require_once (__DIR__ . '/../encryption/src/Disguise.php');
 
-var_dump(Disguise::illumin(Disguise::obscure('Testando hoje pq simmm')));
+$disguise = new Disguise();
+var_dump($disguise->illumin($disguise->obscure('Testando hoje pq simmm')));
