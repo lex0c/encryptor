@@ -118,7 +118,7 @@ class HashGenerator extends Disguise
      */
 	protected function generateSalt() 
 	{
-		return substr(base64_encode(uniqid(mt_rand(), true)), 0, 22);
+        return substr(base64_encode(uniqid(mt_rand(), true)), 0, 22);
 	}
 
     /**
@@ -127,7 +127,7 @@ class HashGenerator extends Disguise
      */
 	protected function generateHash() 
 	{
-		return sprintf('$%s$%02d$%s$', $this->prefix, $this->cust, $this->generateSalt());
+        return sprintf('$%s$%02d$%s$', $this->prefix, $this->cust, $this->generateSalt());
 	}
 
 }
