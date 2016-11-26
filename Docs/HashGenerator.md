@@ -1,4 +1,4 @@
-## PHP Encrypter
+## PHP Hash Generator
 
 Generates an encrypted hash of 107 byte for max security of data
 
