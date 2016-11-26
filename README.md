@@ -1,6 +1,10 @@
 Data Encryption
 ============
 
+[![Build Status](https://travis-ci.org/dwyl/esta.svg?branch=master)](https://twitter.com/leobcastro94)
+[![codecov.io Code Coverage](https://img.shields.io/codecov/c/github/dwyl/hapi-auth-jwt2.svg?maxAge=2592000)](https://github.com/lleocastro/encryptor/tree/master/tests)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/lleocastro/encryptor/issues)
+
 > "Module developed for my framework "[Genniuz](https://github.com/lleocastro/genniuz-framework)", 
 but works perfectly independent of the framework.
 
@@ -17,15 +21,15 @@ not need to have their values retrieved later, only their hash for comparison
 $hash = new HashGenerator();
 
 //Data input
-$data = "Hello World! 1 abcdefghijklmnopq";
+$data = "Hello World!";
 
 //Data Encrypted
 $encryptedData = $hash->encode($data);
 //Output
-string(107) "QlMGRUYtJFNOdkVpNFRKpGVtpkSVtmR2NVMWF1UwoUbVFjVxJlbwRkSEpEaKRUQ0oURxYTUUZ0TlxmV2QVbwJVTwUTVaNDcQZVMaR3VtZVS"
+string(107) "kFMZV3TGpVTWpnVIZFMs9GTqZldOtGZzZlbGt2VsRWWX1WNO5kbohlSEpEaKRUQ0oUR1UkVUJlTSd0c6RlbwpUTVVTVaNDcQZVMrhHVpVzT"
 
 //Hashs comparables
-$check = $hash->isEquals("Hello World! 1 abcdefghijklmnopq", $encryptedData);
+$check = $hash->isEquals("Hello World!", $encryptedData);
 //Output
 bool(true)
 
