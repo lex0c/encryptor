@@ -18,7 +18,7 @@ Click on any link to go a method-specific documentation.
 
 - [Disguise]()
 
-###Hash Generator
+###1. Hash Generator
 
 > 107 bits hash for passwords encryption and things that do 
 not need to have their values retrieved later, only their hash for comparison
@@ -40,7 +40,7 @@ $check = $hash->isEquals("Hello World!", $encryptedData);
 
 ```
 
-###Simple Message Encrypter
+###2. Simple Message Encrypter
 
 > Encrypt messages with a symmetric key using a simple crazy calculation and a bit of obscurity. Tested only with small messages..
 
@@ -75,7 +75,7 @@ $decoded = $smCrypt->decode($key, $encoded);
 //Output: "My EMAIL is 'leonardo_carvalho@outlook.com' and (10+5/2*7=0999) <><because yes. çÇ>";
 
 ```
-###Disguise
+###3. Disguise
 
 > Encrypts and decrypts texts in base64 with some trick and manipulation for strings make a encryption obscure and simple
 
