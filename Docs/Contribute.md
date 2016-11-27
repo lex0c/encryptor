@@ -77,7 +77,7 @@ class ClassName extends Something implements IOtherSomethting
 
 ## Unit Testing
 
-> All pull requests must be accompanied by passing unit tests and complete code coverage. The Slim Framework uses phpunit for testing.
+> All pull requests must be accompanied by passing unit tests and complete code coverage. uses phpunit for testing.
 
 [Learn about PHPUnit](https://github.com/sebastianbergmann/phpunit/)
 
