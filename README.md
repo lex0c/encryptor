@@ -115,9 +115,9 @@ If you discover security related issues, please email leonardo_carvalho@outlook.
 
 #### To contributions 
 
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
+Please, [create issue](https://github.com/lleocastro/encryptor/issues). Thanks!
 
 
 #### License
 
-The Encryptor is licensed under the MIT license. See [License File](LICENSE.md) for more information.
+The Encryptor is licensed under the MIT license. See [License File](https://github.com/lleocastro/encryptor/blob/master/LICENSE) for more information.
