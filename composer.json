@@ -19,7 +19,7 @@
     "phpunit/phpunit": "4.8.*"
   },
   "suggest": {
-    "zendframework/zend-escaper"
+    "zendframework/zend-escaper": "2.5.2"
   },
   "support": {
     "issues": "https://github.com/lleocastro/encryptor/issues"
