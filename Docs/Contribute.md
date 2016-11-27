@@ -16,12 +16,14 @@ pull request for each branch. This allows me to review and pull in new features 
 
 > All pull requests must adhere to the [my style guide for PHP](https://github.com/lleocastro/styles-guide/blob/master/php/README.md).
 
+###### Style guide preview:
+
 ```php
 <?php namespace Package\Subpackage;
 
 /*
  ===========================================================================
- = Preview About Class content
+ = Preview About Class Content
  ===========================================================================
  =
  = Brief description about functionality of class...
@@ -34,21 +36,40 @@ use \RuntimeException;
 
 /**
  * PHPDoc
- * 
- * 
- * 
- * 
+ * ...
  */
  
  //Names in UpperCamelCase
 class ClassName extends Something implements IOtherSomethting
 {
     //Names in LowerCamelCase and initialize hever all variables
-    protected $variable = '';
-    private $arrExample = [];
-    public $status = false;
+    //and for variables in same group define the equals aligned
+    protected $variable  = '';
+    private $arrExample  = [];
+    public $status       = false;
     
-    //...
+    /**
+     * ...
+     * @var int
+     */
+    protected static $some = 1;
+    
+    //Functions in LowerCamelCase
+    public function thing()
+    {
+        echo 'Hello!';
+    }
+    
+    public function otherThing(array $arr)
+    {
+        for($i = 0; $i >= $this->some; $i++):
+        endfor;
+        
+        if(!empty($this->arrExample)):
+        endif;
+        
+        etc...
+    }
     
 }
 
