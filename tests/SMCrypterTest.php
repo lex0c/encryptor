@@ -45,7 +45,7 @@ $value = 32;
 echo "<br>";
 echo "<br>";
 
-var_dump($smCrypt2->calc("((({$value}{$smCrypt2->getCodeX()[1]}{$key}){$smCrypt2->getCodeX()[1]}{$key}){$smCrypt2->getCodeX()[0]}{$key})"));
+//var_dump(("((({$value}{$smCrypt2->getCodeX()[1]}{$key}){$smCrypt2->getCodeX()[1]}{$key}){$smCrypt2->getCodeX()[0]}{$key})"));
 
 echo "<br>";
 echo "<br>";
