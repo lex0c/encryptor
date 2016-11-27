@@ -1,0 +1,22 @@
+
+{
+  "name": "lleocastro/encryptor",
+  "description": "Encrypting values such as passwords and short messages",
+  "keywords": ["library","secure", "encryption"],
+  "homepage": "https://github.com/lleocastro/encryptor",
+  "type": "library",
+  "license": "MIT",
+  "authors": [ 
+    {
+      "name": "Léo Castro",
+      "email": "leonardo_carvalho@outlook.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.8.*"
+  }
+  
+}
