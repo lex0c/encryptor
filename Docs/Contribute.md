@@ -16,6 +16,44 @@ pull request for each branch. This allows me to review and pull in new features 
 
 > All pull requests must adhere to the [my style guide for PHP](https://github.com/lleocastro/styles-guide/blob/master/php/README.md).
 
+```php
+<?php namespace Package\Subpackage;
+
+/*
+ ===========================================================================
+ = Preview About Class content
+ ===========================================================================
+ =
+ = Brief description about functionality of class...
+ = 
+ */
+
+use \Package\Subpackage\Something;
+use \Package\Subpackage\IOtherSomethting;
+use \RuntimeException;
+
+/**
+ * PHPDoc
+ * 
+ * 
+ * 
+ * 
+ */
+ 
+ //Names in UpperCamelCase
+class ClassName extends Something implements IOtherSomethting
+{
+    //Names in LowerCamelCase and initialize hever all variables
+    protected $variable = '';
+    private $arrExample = [];
+    public $status = false;
+    
+    //...
+    
+}
+
+```
+
 ## Unit Testing
 
 > All pull requests must be accompanied by passing unit tests and complete code coverage. The Slim Framework uses phpunit for testing.
