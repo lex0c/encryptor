@@ -95,23 +95,29 @@ $decrypt = $disguise->illumin($encrypt);
 //Output: "This is a Rock ´N Roll..";
 
 ```
-####More info
+<hr>
+
+## Learn More
 
 > This readme is just a preview, for more information access the readme of each method.. 
 
-- [Hash Generator](https://github.com/lleocastro/encryptor/blob/master/Docs/HashGenerator.md) 
-- [SMCrypter]() 
+- [Hash Generator](https://github.com/lleocastro/encryptor/blob/master/Docs/HashGenerator.md)
+- [SMCrypter]()
 - [Disguise]()
 
-<br>
 
-###Download
+#### Security
 
-> Realises stable
+> This code is secure counter cross-site scripting (XSS).
 
-- [1.1.4](https://github.com/lleocastro/encryptor/releases/tag/1.1.4)
+If you discover security related issues, please email leonardo_carvalho@outlook.com instead of using the issue tracker.
 
 
-###To contributions 
-- [Create issue](https://github.com/lleocastro/encryptor/issues)
-- leonardo_carvalho@outlook.com
+#### To contributions 
+
+Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
+
+
+#### License
+
+The Encryptor is licensed under the MIT license. See [License File](LICENSE.md) for more information.
