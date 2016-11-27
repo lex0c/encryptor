@@ -22,10 +22,8 @@ use \InvalidArgumentException;
  * @link https://github.com/lleocastro/encryptor
  * @license https://github.com/lleocastro/encryptor/blob/master/LICENSE
  * @author Leonardo Carvalho <leonardo_carvalho@outlook.com>
- * @copyright 2016 (MIT License)
+ * @copyright 2016 MIT License
  * @package \Encryptor
- * @copyright 2016 
- * @version 1.0.2
  */
 class HashGenerator extends Disguise
 {

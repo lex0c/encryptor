@@ -3,11 +3,10 @@
 /**
  * ASCII Table
  * @link https://github.com/lleocastro/encryptor/
- * @license (MIT) https://github.com/lleocastro/encryptor/blob/master/LICENSE
+ * @license https://github.com/lleocastro/encryptor/blob/master/LICENSE
  * @author Leonardo Carvalho <leonardo_carvalho@outlook.com>
+ * @copyright 2016 MIT License 
  * @package \Encryptor
- * @copyright 2016 
- * @version 1.0.0
  */
 
 class ASCIITable
