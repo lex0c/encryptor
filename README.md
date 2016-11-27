@@ -8,6 +8,15 @@ Data Encryption
 > "Module developed for my framework "[Genniuz](https://github.com/lleocastro/genniuz-framework)", 
 but works perfectly independent of the framework.
 
+## Instalation
+
+> It's recommended that you use Composer to install Encryptor.
+
+```bash
+composer require lleocastro/encryptor
+```
+<hr>
+
 ##This suite contains three types of data encryption!
 
 Click on any link to go a method-specific documentation.
