@@ -124,7 +124,7 @@ If you discover security related issues, please email leonardo_carvalho@outlook.
 
 #### To contributions 
 
-Please, see [doc for contribute](https://github.com/lleocastro/encryptor/blob/master/Docs/Contribute.md). Thanks!
+Please, see [doc for contribute](https://github.com/lleocastro/encryptor/blob/master/CONTRIBUTE.md). Thanks!
 
 
 #### License
