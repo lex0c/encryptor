@@ -33,3 +33,19 @@ echo "<br>";
 echo "<br>";
 
 echo 'Decrypted Text: '.$smCrypt2->decode($key, $en);
+
+echo "<br>";
+echo "<br>";
+
+$key = 134635;
+$value = 32;
+
+//var_dump(str_ireplace('"', '', "((({$value}{$smCrypt2->getCodeX()[1]}{$key}){$smCrypt2->getCodeX()[1]}{$key}){$smCrypt2->getCodeX()[0]}{$key})"));
+
+echo "<br>";
+echo "<br>";
+
+var_dump($smCrypt2->calc("((({$value}{$smCrypt2->getCodeX()[1]}{$key}){$smCrypt2->getCodeX()[1]}{$key}){$smCrypt2->getCodeX()[0]}{$key})"));
+
+echo "<br>";
+echo "<br>";
