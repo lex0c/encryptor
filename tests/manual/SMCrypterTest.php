@@ -1,6 +1,7 @@
 <?php
 
-require_once (__DIR__ . '/../encryption/src/SMCrypter.php');
+require_once (__DIR__ . '/../../vendor/autoload.php');
+use \Encryptor\Suite\SMCrypter;
 
 $smCrypt1 = new SMCrypter();
 $smCrypt2 = new SMCrypter();
@@ -33,3 +34,19 @@ echo "<br>";
 echo "<br>";
 
 echo 'Decrypted Text: '.$smCrypt2->decode($key, $en);
+
+echo "<br>";
+echo "<br>";
+
+$key = 134635;
+$value = 32;
+
+//var_dump(str_ireplace('"', '', "((({$value}{$smCrypt2->getCodeX()[1]}{$key}){$smCrypt2->getCodeX()[1]}{$key}){$smCrypt2->getCodeX()[0]}{$key})"));
+
+echo "<br>";
+echo "<br>";
+
+//var_dump(("((({$value}{$smCrypt2->getCodeX()[1]}{$key}){$smCrypt2->getCodeX()[1]}{$key}){$smCrypt2->getCodeX()[0]}{$key})"));
+
+echo "<br>";
+echo "<br>";

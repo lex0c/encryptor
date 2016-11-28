@@ -1,6 +1,7 @@
 <?php
 
-require_once (__DIR__ . '/../encryption/src/HashGenerator.php');
+require_once (__DIR__ . '/../../vendor/autoload.php');
+use \Encryptor\Suite\HashGenerator;
 
 
 $data = "Hello World!";

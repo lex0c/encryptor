@@ -1,4 +1,4 @@
-<?php //namespace Encryptor;
+<?php namespace Encryptor\Suite;
 
 /*
  ===========================================================================
@@ -10,9 +10,7 @@
  = 
  */
 
-require_once ('Disguise.php');
-
-//use \Encryptor\Disguise;
+use \Encryptor\Suite\Disguise;
 use \InvalidArgumentException;
 
 /**

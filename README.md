@@ -1,5 +1,5 @@
-Data Encryption
-============
+Simple Data Encryption
+========================
 
 [![Build Status](https://travis-ci.org/dwyl/esta.svg?branch=master)](https://twitter.com/leobcastro94)
 [![codecov.io Code Coverage](https://img.shields.io/codecov/c/github/dwyl/hapi-auth-jwt2.svg?maxAge=2592000)](https://github.com/lleocastro/encryptor/tree/master/tests)
@@ -8,7 +8,7 @@ Data Encryption
 > "Module developed for my framework "[Genniuz](https://github.com/lleocastro/genniuz-framework)", 
 but works perfectly independent of the framework.
 
-## Instalation
+## Installation
 
 > It's recommended that you use Composer to install Encryptor.
 
@@ -17,7 +17,7 @@ composer require lleocastro/encryptor
 ```
 <hr>
 
-##This suite contains three types of data encryption!
+## This suite contains three types of data encryption!
 
 Click on any link to go a method-specific documentation.
 
@@ -27,7 +27,7 @@ Click on any link to go a method-specific documentation.
 
 - [Disguise]()
 
-###1. Hash Generator
+### 1. Hash Generator
 
 > 107 bits hash for passwords encryption and things that do 
 not need to have their values retrieved later, only their hash for comparison
@@ -49,7 +49,7 @@ $check = $hash->isEquals("Hello World!", $encryptedData);
 
 ```
 
-###2. Simple Message Encrypter
+### 2. Message Encrypter
 
 > Encrypt messages with a symmetric key using a simple crazy calculation and a bit of obscurity. Tested only with small messages..
 
@@ -84,7 +84,7 @@ $decoded = $smCrypt->decode($key, $encoded);
 //Output: "My EMAIL is 'leonardo_carvalho@outlook.com' and (10+5/2*7=0999) <><because yes. çÇ>";
 
 ```
-###3. Disguise
+### 3. Disguise
 
 > Encrypts and decrypts texts in base64 with some trick and manipulation for strings make a encryption obscure and simple
 
