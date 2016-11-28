@@ -1,6 +1,7 @@
 <?php
 
-require_once (__DIR__ . '/../encryption/src/SMCrypter.php');
+require_once (__DIR__ . '/../../vendor/autoload.php');
+use \Encryptor\Suite\SMCrypter;
 
 $smCrypt1 = new SMCrypter();
 $smCrypt2 = new SMCrypter();

@@ -1,4 +1,4 @@
-<?php //namespace Encryptor;
+<?php namespace Encryptor\Suite;
 
 /**
  * Disguise for Low Encryption

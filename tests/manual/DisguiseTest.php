@@ -1,6 +1,8 @@
 <?php
 
-require_once (__DIR__ . '/../encryption/src/Disguise.php');
+require_once (__DIR__ . '/../../vendor/autoload.php');
+use \Encryptor\Suite\Disguise;
+
 
 $disguise = new Disguise();
 

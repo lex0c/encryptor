@@ -1,4 +1,4 @@
-<?php //namespace Encryptor;
+<?php namespace Encryptor\Suite;
 
 /*
  ===========================================================================
@@ -10,12 +10,9 @@
  = 
  */
 
-require_once (__DIR__ . '/../ASCIITable.php');
-require_once ('Disguise.php');
-require_once ('HashGenerator.php');
-
-//use \Encryptor\Disguise;
-//use \Encryptor\ASCIITable;
+use \Encryptor\ASCIITable;
+use \Encryptor\Suite\Disguise;
+use \Encryptor\Suite\HashGenerator;
 use \InvalidArgumentException;
 
 /**

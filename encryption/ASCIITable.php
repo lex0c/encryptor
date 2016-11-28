@@ -1,4 +1,4 @@
-<?php //namespace Encryptor;
+<?php namespace Encryptor;
 
 /**
  * ASCII Table
