@@ -1,21 +1,25 @@
 <?php
 
-require_once (__DIR__ . '/../../vendor/autoload.php');
+require_once (__DIR__ . '/../bootstrap.php');
 use \Encryptor\Suite\HashGenerator;
-
-
-$data = "Hello World!";
-$tag = "<?php phpinfo(); ?>"; //Safety against scripts injections.
 
 $hash1 = new HashGenerator();
 $hash2 = new HashGenerator();
 $hash3 = new HashGenerator();
 
+$data = "Hello World!";
+$tag = "<?php phpinfo(); ?>"; //Safety against scripts injections.
+echo 'Text: ' . htmlentities($data);
+
+echo "<br>";
+echo "<br>";
+
 $encryptedData1 = $hash1->encode($data);
 $encryptedData2 = $hash2->encode($data);
 
+echo 'Encrypted: ' . $encryptedData1;
+
 echo "<br>";
-var_dump($encryptedData1);
 echo "<br>";
 
 // // //$x = explode(strlen($encryptedData1)/2, $encryptedData1);
@@ -40,6 +44,8 @@ echo "<br>";
 // //echo "<br>";
 
 $output = $hash3->isEquals("Hello World!", $encryptedData2);
-var_dump($output);
-// //echo "<br>";
+echo 'Hashs Comparables: ';
+var_dump(htmlentities($output));
 
+echo "<br>";
+echo "<br>";
