@@ -2,7 +2,7 @@
 {
   "name": "lleocastro/encryptor",
   "description": "Encrypting values such as passwords and short messages",
-  "keywords": ["library","secure", "encryption", "crypt", "password"],
+  "keywords": ["library", "suite", "security", "encryption", "crypt", "password"],
   "homepage": "https://github.com/lleocastro/encryptor",
   "version": "dev-master",
   "type": "library",
