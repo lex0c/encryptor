@@ -1,5 +1,7 @@
 <?php namespace Encryptor\Suite;
 
+use \InvalidArgumentException;
+
 /**
  * Disguise for Low Encryption
  * @link https://github.com/lleocastro/encryptor/
@@ -18,7 +20,11 @@ class Disguise
      */
     final public function obscure($data)
     {
-        $encryptedData = base64_encode($data);
+        if(empty($data)):
+            throw new InvalidArgumentException('Arguments not valid!');
+        endif;
+
+        $encryptedData = base64_encode(htmlentities((string) $data));
         return base64_encode(strrev(substr($encryptedData, (strlen($encryptedData)/2)-strlen($encryptedData)
             ,strlen($encryptedData)).substr($encryptedData, 0, (strlen($encryptedData)/2)-strlen($encryptedData))));
     }
@@ -31,7 +37,11 @@ class Disguise
      */
     final public function illumin($encryptedData)
     {
-    	$encryptedData = base64_decode($encryptedData);
+        if(empty($encryptedData)):
+            throw new InvalidArgumentException('Arguments not valid!');
+        endif;
+
+    	$encryptedData = base64_decode(htmlentities((string) $encryptedData));
         $encryptedData = strrev(
     	    substr($encryptedData, (strlen($encryptedData)/2)-strlen($encryptedData),strlen($encryptedData))
     	    .substr($encryptedData, 0, (strlen($encryptedData)/2)-strlen($encryptedData)));
