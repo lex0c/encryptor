@@ -19,6 +19,14 @@
   "require-dev": {
     "phpunit/phpunit": "4.8.*"
   },
+  "autoload": {
+    "psr-4": {
+      "Encryptor\\": "encryption/",
+      "Encryptor\\Suite\\": "encryption/src/",
+      "Tests\\Manual\\": "tests/manual/",
+      "Tests\\PHPUnit\\": "tests/phpunit/"
+    }
+  },
   "suggest": {
     "zendframework/zend-escaper": "2.5.2",
     "zendframework/zend-diactoros": "1.3.7"
@@ -30,6 +38,6 @@
     "platform": {
       "php": "5.5.9"
     }
-  }  
+  } 
   
 }
