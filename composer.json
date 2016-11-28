@@ -22,9 +22,7 @@
   "autoload": {
     "psr-4": {
       "Encryptor\\": "encryption/",
-      "Encryptor\\Suite\\": "encryption/src/",
-      "Tests\\Manual\\": "tests/manual/",
-      "Tests\\PHPUnit\\": "tests/phpunit/"
+      "Encryptor\\Suite\\": "encryption/src/"
     }
   },
   "suggest": {
