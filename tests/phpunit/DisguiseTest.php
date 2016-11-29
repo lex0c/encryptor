@@ -8,10 +8,10 @@ use \Encryptor\Suite\Disguise;
  */
 final class DisguiseTest extends TestCase
 {
-	/**
+    /**
      * @test
      * @expectedSuccess
-	 */
+     */
     public function testEncrypting()
     {
         $disguise = new Disguise();
@@ -25,8 +25,8 @@ final class DisguiseTest extends TestCase
     /**
      * @test
      * @expectedSuccess
-	 */
-    public function testDecrypted()
+     */
+    public function testDecrypting()
     {
         $disguise = new Disguise();
         $dataInput = 'This is Rock `Ǹ` Roll!';
